@@ -1,0 +1,446 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"492 C:\Program Files\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 C:\Program Files\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"8 C:\Program Files\Microchip\xc8\v1.34\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"93 C:\Users\Gustavo\Desktop\VIP\VIP_.X\vip.c
+[v _Setup Setup `(v  1 e 0 0 ]
+"212
+[v _main main `(v  1 e 0 0 ]
+"323
+[v _interrupcao interrupcao `II(v  1 e 0 0 ]
+"409
+[v _Duty_Pwm Duty_Pwm `(v  1 e 0 0 ]
+[v i1_Duty_Pwm Duty_Pwm `(v  1 e 0 0 ]
+"436
+[v _exibe_configuracao exibe_configuracao `(v  1 e 0 0 ]
+"495
+[v _exibe_status exibe_status `(v  1 e 0 0 ]
+"519
+[v _exibe_config_valor exibe_config_valor `(v  1 e 0 0 ]
+"557
+[v _IntToChar IntToChar `(v  1 e 0 0 ]
+"561
+[v _inicializa_lcd inicializa_lcd `(v  1 e 0 0 ]
+"576
+[v _lcd_comando lcd_comando `(v  1 e 0 0 ]
+"593
+[v _lcd_escrevedado lcd_escrevedado `(v  1 e 0 0 ]
+"610
+[v _exibe_recebimento exibe_recebimento `(v  1 e 0 0 ]
+"665
+[v _Write_EEPROM Write_EEPROM `(v  1 e 0 0 ]
+"685
+[v _Read_EEPROM Read_EEPROM `(uc  1 e 1 0 ]
+[v i1_Read_EEPROM Read_EEPROM `(uc  1 e 1 0 ]
+"692
+[v _debounce debounce `(b  1 e 0 0 ]
+"55 C:\Program Files\Microchip\xc8\v1.34\include\pic16f628a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"160
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S255 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"177
+[u S264 . 1 `S255 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES264  1 e 1 @5 ]
+"221
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S317 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"238
+[u S326 . 1 `S317 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES326  1 e 1 @6 ]
+[s S168 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"324
+[s S177 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S182 . 1 `S168 1 . 1 0 `S177 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES182  1 e 1 @11 ]
+[s S147 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+`uc 1 EEIF 1 0 :1:7 
+]
+"395
+[u S156 . 1 `S147 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES156  1 e 1 @12 ]
+[s S48 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"537
+[s S52 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S60 . 1 `S48 1 . 1 0 `S52 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES60  1 e 1 @18 ]
+"592
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+[s S24 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 CCP1Y 1 0 :1:4 
+`uc 1 CCP1X 1 0 :1:5 
+]
+"622
+[s S28 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+]
+[u S33 . 1 `S24 1 . 1 0 `S28 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES33  1 e 1 @23 ]
+[s S98 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"682
+[s S107 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADDEN 1 0 :1:3 
+]
+[u S110 . 1 `S98 1 . 1 0 `S107 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES110  1 e 1 @24 ]
+"737
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"743
+[v _CMCON CMCON `VEuc  1 e 1 @31 ]
+[s S215 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"832
+[s S222 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S226 . 1 `S215 1 . 1 0 `S222 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES226  1 e 1 @129 ]
+"881
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"942
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S126 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+`uc 1 EEIE 1 0 :1:7 
+]
+"1020
+[u S135 . 1 `S126 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES135  1 e 1 @140 ]
+"1107
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+[s S77 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"1130
+[u S86 . 1 `S77 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES86  1 e 1 @152 ]
+"1169
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"1175
+[v _EEDATA EEDATA `VEuc  1 e 1 @154 ]
+"1181
+[v _EEADR EEADR `VEuc  1 e 1 @155 ]
+[s S340 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+]
+"1200
+[u S345 . 1 `S340 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES345  1 e 1 @156 ]
+"1224
+[v _EECON2 EECON2 `VEuc  1 e 1 @157 ]
+"354 C:\Program Files\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _dpowers dpowers `DCC[5]ui  1 s 10 dpowers ]
+"45 C:\Users\Gustavo\Desktop\VIP\VIP_.X\vip.c
+[v _reg reg `uc  1 e 1 0 ]
+"46
+[v _flag_serial flag_serial `b  1 e 0 0 ]
+"47
+[v _Flag_active Flag_active `b  1 e 0 0 ]
+"48
+[v _Flag_conectado Flag_conectado `b  1 e 0 0 ]
+"49
+[v _Flag_motors_off Flag_motors_off `b  1 e 0 0 ]
+"50
+[v _display_config display_config `b  1 e 0 0 ]
+"51
+[v _display_value display_value `b  1 e 0 0 ]
+"53
+[v _config config `i  1 e 2 0 ]
+"54
+[v _PWM_main_motor PWM_main_motor `i  1 e 2 0 ]
+"55
+[v _PWM_motors PWM_motors `i  1 e 2 0 ]
+"56
+[v _Time_main_motor Time_main_motor `i  1 e 2 0 ]
+"57
+[v _Time_motors Time_motors `i  1 e 2 0 ]
+"58
+[v _Active_motor Active_motor `i  1 e 2 0 ]
+"60
+[v _Matrix_Char Matrix_Char `[4]uc  1 e 4 0 ]
+"61
+[v _aux_tm0 aux_tm0 `i  1 e 2 0 ]
+"62
+[v _cnt_int_tmr0 cnt_int_tmr0 `i  1 e 2 0 ]
+"63
+[v _Tmp_atividade Tmp_atividade `i  1 e 2 0 ]
+"212
+[v _main main `(v  1 e 0 0 ]
+{
+"321
+} 0
+"610
+[v _exibe_recebimento exibe_recebimento `(v  1 e 0 0 ]
+{
+"663
+} 0
+"436
+[v _exibe_configuracao exibe_configuracao `(v  1 e 0 0 ]
+{
+"493
+} 0
+"519
+[v _exibe_config_valor exibe_config_valor `(v  1 e 0 0 ]
+{
+"553
+} 0
+"557
+[v _IntToChar IntToChar `(v  1 e 0 0 ]
+{
+[v IntToChar@value value `i  1 p 2 35 ]
+"559
+} 0
+"492 C:\Program Files\Microchip\xc8\v1.34\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+"501
+[v sprintf@width width `i  1 a 2 32 ]
+"528
+[v sprintf@val val `ui  1 a 2 29 ]
+"499
+[v sprintf@c c `c  1 a 1 34 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 28 ]
+"506
+[v sprintf@prec prec `c  1 a 1 27 ]
+"494
+[v sprintf@ap ap `[1]*.4v  1 a 1 26 ]
+"492
+[v sprintf@sp sp `*.4uc  1 a 1 wreg ]
+[v sprintf@f f `*.24DCCuc  1 p 1 20 ]
+"533
+[v sprintf@sp sp `*.4uc  1 a 1 31 ]
+"1541
+} 0
+"8 C:\Program Files\Microchip\xc8\v1.34\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 7 ]
+"15
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 19 ]
+"6
+[v ___lwmod@divisor divisor `ui  1 p 2 14 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 16 ]
+"26
+} 0
+"6 C:\Program Files\Microchip\xc8\v1.34\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"6
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"31
+} 0
+"93 C:\Users\Gustavo\Desktop\VIP\VIP_.X\vip.c
+[v _Setup Setup `(v  1 e 0 0 ]
+{
+"210
+} 0
+"561
+[v _inicializa_lcd inicializa_lcd `(v  1 e 0 0 ]
+{
+"574
+} 0
+"495
+[v _exibe_status exibe_status `(v  1 e 0 0 ]
+{
+"517
+} 0
+"593
+[v _lcd_escrevedado lcd_escrevedado `(v  1 e 0 0 ]
+{
+[v lcd_escrevedado@dado dado `uc  1 a 1 wreg ]
+[v lcd_escrevedado@dado dado `uc  1 a 1 wreg ]
+[v lcd_escrevedado@dado dado `uc  1 a 1 8 ]
+"608
+} 0
+"576
+[v _lcd_comando lcd_comando `(v  1 e 0 0 ]
+{
+[v lcd_comando@dado dado `uc  1 a 1 wreg ]
+[v lcd_comando@dado dado `uc  1 a 1 wreg ]
+[v lcd_comando@dado dado `uc  1 a 1 8 ]
+"591
+} 0
+"665
+[v _Write_EEPROM Write_EEPROM `(v  1 e 0 0 ]
+{
+[v Write_EEPROM@addr addr `uc  1 a 1 wreg ]
+"666
+[v Write_EEPROM@aux_Global_interrupt aux_Global_interrupt `i  1 a 2 9 ]
+"665
+[v Write_EEPROM@addr addr `uc  1 a 1 wreg ]
+[v Write_EEPROM@data data `uc  1 p 1 6 ]
+"668
+[v Write_EEPROM@addr addr `uc  1 a 1 11 ]
+"683
+} 0
+"685
+[v _Read_EEPROM Read_EEPROM `(uc  1 e 1 0 ]
+{
+[v Read_EEPROM@addr addr `uc  1 a 1 wreg ]
+[v Read_EEPROM@addr addr `uc  1 a 1 wreg ]
+[v Read_EEPROM@addr addr `uc  1 a 1 6 ]
+"690
+} 0
+"409
+[v _Duty_Pwm Duty_Pwm `(v  1 e 0 0 ]
+{
+"411
+[v Duty_Pwm@porcent porcent `i  1 a 2 16 ]
+"409
+[v Duty_Pwm@value value `i  1 p 2 12 ]
+"434
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 10 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 6 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 8 ]
+"53
+} 0
+"323 C:\Users\Gustavo\Desktop\VIP\VIP_.X\vip.c
+[v _interrupcao interrupcao `II(v  1 e 0 0 ]
+{
+"407
+} 0
+"685
+[v i1_Read_EEPROM Read_EEPROM `(uc  1 e 1 0 ]
+{
+[v i1Read_EEPROM@addr addr `uc  1 a 1 wreg ]
+[v i1Read_EEPROM@addr addr `uc  1 a 1 wreg ]
+[v i1Read_EEPROM@addr addr `uc  1 a 1 0 ]
+"690
+} 0
+"409
+[v i1_Duty_Pwm Duty_Pwm `(v  1 e 0 0 ]
+{
+[v i1Duty_Pwm@porcent Duty_Pwm `i  1 a 2 10 ]
+[v i1Duty_Pwm@value value `i  1 p 2 6 ]
+"434
+} 0
+"15 C:\Program Files\Microchip\xc8\v1.34\sources\common\Umul16.c
+[v i1___wmul __wmul `(ui  1 e 2 0 ]
+{
+[v i1___wmul@product __wmul `ui  1 a 2 4 ]
+[v i1___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v i1___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"692 C:\Users\Gustavo\Desktop\VIP\VIP_.X\vip.c
+[v _debounce debounce `(b  1 e 0 0 ]
+{
+[v debounce@button button `uc  1 a 1 wreg ]
+[v debounce@button button `uc  1 a 1 wreg ]
+[v debounce@button button `uc  1 a 1 2 ]
+"699
+} 0
